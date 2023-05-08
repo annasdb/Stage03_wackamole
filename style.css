@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hole {
+    top: 225px;
+    left: 167px;
+
+    position: absolute;
+    z-index: 1;
+
+    display: grid;
+    grid-template-areas: 
+    "A B C D" 
+    "E F G H" 
+    "I J K L";
+
+    gap: 54px;
+}
+
+.mole {
+    background-image: url(imagens/toupeira6.svg);
+    width: 222px;
+    height: 168px;
+}
+
+.hole div:nth-child(1) {
+    grid-area: A;
+    animation: wack 700ms reverse forwards 9s;
+}
+
+.hole div:nth-child(2) {
+    grid-area: B;
+    animation: wack 700ms reverse forwards 15s;
+}
+
+.hole div:nth-child(3) {
+    grid-area: C;
+    animation: wack 700ms reverse forwards 21s;
+}
+
+.hole div:nth-child(4) {
+    grid-area: D;
+    animation: wack 700ms reverse forwards 25s;
+}
+
+.hole div:nth-child(5) {
+    grid-area: E;
+    animation: wack 700ms reverse forwards 13s;
+}
+
+.hole div:nth-child(6) {
+    grid-area: F;
+    animation: wack 700ms reverse forwards 3s;
+}
+
+.hole div:nth-child(7) {
+    grid-area: G;
+    animation: wack 700ms reverse forwards 17s;
+}
+
+.hole div:nth-child(8) {
+    grid-area: H;
+    animation: wack 700ms reverse forwards 23s;
+}
+
+.hole div:nth-child(9) {
+    grid-area: I;
+    animation: wack 700ms reverse forwards 5s;
+}
+
+.hole div:nth-child(10) {
+    grid-area: J;
+    animation: wack 700ms reverse forwards 11s;
+}
+
+.hole div:nth-child(11) {
+    grid-area: K;
+    animation: wack 700ms reverse forwards 7s;
+}
+
+.hole div:nth-child(12) {
+    grid-area: L;
+    animation: wack 700ms reverse forwards 19s inicial;
+}
+
+@keyframes wack {
+    0% {
+        background-image: url(imagens/toupeira6.svg);
+    }
+
+    1% {
+        background-image: url(imagens/toupeira1.svg)
+    }
+
+    20% {
+        background-image: url(imagens/toupeira2.svg);
+    }
+
+    40% {
+        background-image: url(imagens/toupeira3.svg);
+    }
+
+    60% {
+        background-image: url(imagens/toupeira4.svg)
+    }
+
+    80% {
+        background-image: url(imagens/toupeira5.svg)
+    }
+
+    100% {
+        background-image: url(imagens/toupeira6.svg)
+    }
+}
